@@ -17,16 +17,16 @@ app.post("/login",(req,res)=>{
     if (!email){
         res.status(400).json("Email cannot be empty")
     }
-    if (password.length()<8 && password.length()>16){
+    if (password.length<8 && password.length>16){
         res.status(400).json("Password length should be greater than 8 or less than or equal to 16")
     }
 
     else{
         res.status(200).json(
-            {Username},
-            {email},
-              {password},
-             {Dob}
+            {Username,
+            email,
+              password,
+             Dob}
             
         )
     }
