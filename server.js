@@ -23,12 +23,12 @@ app.post("/login",(req,res)=>{
 
     else{
         res.status(200).json(
-            {
-            "Username" : {Username},
-            "Email": {email},
-            "Password" : {password},
-            "Date of birth" : {Dob}
-            }
+            
+            {Username},
+            {email},
+              {password},
+             {Dob}
+            
         )
     }
 })
